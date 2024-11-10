@@ -1,0 +1,331 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1px;
+    background: rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-list li {
+    padding: 19px 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color:rgb(37, 101, 221);
+}
+
+.rightnav {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-sm {
+    padding: 8px 16px;
+    background-color: rgb(37, 101, 221);;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-sm:hover {
+    background-color: rgb(37, 101, 221);
+}
+
+/* First Section Styles */
+.firstSection {
+    height: 100vh;
+    background: rgba(26, 8, 8, 0.445) url('images/tfpbg.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.box-main {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.firstHalf {
+    width: 50%;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.firstHalf .text-big {
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.firstHalf .text-small {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.firstHalf .text-small-two {
+    font-size: 25px;
+}
+
+.firstHalf .buttons {
+    margin-top: 20px;
+}
+
+.firstHalf .btn {
+    padding: 10px 10px;
+    background-color: rgb(37, 101, 221);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.firstHalf .btn:hover {
+    background-color: rgb(37, 101, 221);;
+}
+
+.secondHalf {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondHalf img {
+    max-width: 100%;
+    border: 2px solid white;
+    border-radius: 150px;
+}
+
+/* Mission, About, and Services Sections */
+.section-right, .section-left {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.section-right .paras, .section-left .paras {
+    width: 60%;
+}
+
+.section-right .paras .sectionTag, .section-left .paras .sectionTag {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section-right .paras .sectionSubTag, .section-left .paras .sectionSubTag {
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 490;
+}
+
+.Thumbnail {
+    width: 35%;
+}
+
+.Thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #d4e3eb;
+    padding: 20px 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.contact .text-center {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea.form-input {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.btn-dark {
+    padding: 12px 25px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-dark:hover {
+    background-color: #444;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.text-footer {
+    font-size: 16px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1140px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 19px;
+        align-items: center;
+    }
+
+    .box-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .firstHalf {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .secondHalf {
+        width: 100%;
+    }
+
+    .section-right, .section-left {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-right .paras, .section-left .paras {
+        width: 100%;
+    }
+
+    .Thumbnail {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .form-input {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .btn-dark, .btn-sm {
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo img {
+        width: 120px;
+    }
+
+    .firstHalf .text-big {
+        font-size: 40px;
+    }
+
+    .firstHalf .text-small {
+        font-size: 24px;
+    }
+
+    .section-right .paras .sectionTag,
+    .section-left .paras .sectionTag {
+        font-size: 28px;
+    }
+
+    .section-right .paras .sectionSubTag,
+    .section-left .paras .sectionSubTag {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .form-input {
+        font-size: 14px;
+    }
+}
